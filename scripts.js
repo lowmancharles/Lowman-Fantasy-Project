@@ -45,8 +45,13 @@ const counts = { QB: 0, RB: 0, WR: 0, TE: 0, FLEX: 0 };
   let total = 0;
   players.forEach(function (player) {
     const newPlayer = document.createElement("li");
-    newPlayer.textContent = player.name + " - " + player.points;
     newPlayer.className = "player";
+    const nameSpan = document.createElement("span");
+    nameSpan.textContent = player.name;
+    const pointsSpan = document.createElement("span");
+    pointsSpan.className = "points";
+    pointsSpan.textContent = player.points.toFixed(1);
+    newPlayer.append(nameSpan, pointsSpan);
 
     if (counts[player.position] < limits[player.position]) {
       // room at their own position
@@ -68,7 +73,7 @@ const counts = { QB: 0, RB: 0, WR: 0, TE: 0, FLEX: 0 };
 
   });
 
-  totalElement.textContent = total;
+  totalElement.textContent = total.toFixed(1);
 }
 
 renderRoster();
