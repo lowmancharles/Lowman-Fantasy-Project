@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charles Lowman Fantasy Football Projections</title>
+  </head>
+  <body>
+    <div class="card">
+        <input type="text" id="nameInput" placeholder="Enter Player Name">
+        <input type="number" id="pointsInput" placeholder="Enter Points">
+        <select id="positionSelect">
+          <option value="QB">QB</option>
+          <option value="RB">RB</option>
+          <option value="WR">WR</option>
+          <option value="TE">TE</option>
+        </select>
+        <button class="button" id="addPlayer">Add Player</button>
+        <ul class ="roster" id="roster"></ul>
+      <h1>Lowbros Pulstars</h1>
+      <p>This is a week by week projection tool to help decide who to start and sit.</p>
+   <button class="button" id="loadLineup">Load Lineup</button>
+      <div class="row">
+      <div class="position">
+        <h3>QB</h3>
+        <ul class="roster" id="QB">
+        </ul>
+      </div>
+
+      <div class="position">
+        <h3>RB</h3>
+        <ul class="roster" id="RB">
+        </ul>
+      </div>
+
+      <div class="position">
+        <h3>WR</h3>
+        <ul class="roster" id="WR">
+        </ul>
+      </div>
+
+      <div class="position">
+        <h3>TE</h3>
+        <ul class="roster" id="TE">
+          <div class="position">
+            </ul>
+        </ul>
+      </div>
+      <div class="position">
+        <h3>Flex</h3>
+        <ul class="roster" id="FLEX">
+        </ul>
+      </div>
+      <div class="position">
+      <h3>Bench</h3>
+      <ul class="roster" id="bench">
+        </ul>
+      
+    </div>
+        <p>Total Points: <span id="totalPoints">0</span></p>
+  </body>
+</html>
+
+    </div>
+  </body>
+</html>
+<script src="scripts.js"></script>

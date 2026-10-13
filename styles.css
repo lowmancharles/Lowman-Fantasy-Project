@@ -1,0 +1,76 @@
+body {
+    background-color:lightgray;
+}
+h1 {
+    color: rgb(128, 0, 0);
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+.card {
+    border: 6px solid rgb(172, 114, 15);
+
+    padding: 32px;
+
+    margin: 40px
+
+    background: white;
+    border-radius: 28px;
+    max-width: 520px
+    width: 90%;
+    text-align::center;
+}
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgb(172, 114, 15);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+      border: none;
+  font-size: 1rem;
+}
+.button:hover {
+    background-color: rgba(128, 87, 0, 0.342);
+    border-redius: 12px;
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+.row {
+  display: flex;          /* positions sit side by side */
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.position {
+  flex: 1;                /* each column shares the width equally */
+}
+
+.position h3 {
+  margin: 0 0 8px;
+  color: #2563eb;
+}
+
+.roster {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.player {
+  background: #f1f5f9;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
