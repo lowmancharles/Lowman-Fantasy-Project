@@ -194,6 +194,7 @@ select:focus {
 .pos-wr    { background: #1d4ed8; }
 .pos-te    { background: #7e22ce; }
 .pos-flex  { background: var(--gold); }
+.pos-k     { background: #0f766e; }
 .pos-bench { background: #64748b; }
 
 .roster {

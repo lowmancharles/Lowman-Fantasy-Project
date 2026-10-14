@@ -12,6 +12,7 @@ const players = [
     {name: "Brock Bowers", position: "TE", points: 18.1},
     {name: "Bayshal Tuten", position: "RB", points: 14.7},
     {name: "Emmanual Wilson", position: "RB", points: 13.9},
+    {name: "Tyler Loop", position: "K", points: 10},
 ];
 button.addEventListener("click", function (event) {
     console.log("Button Clicked!");
@@ -35,13 +36,13 @@ addButton.addEventListener("click", function () {
   renderRoster();
 });
 
-const limits = { QB: 1, RB: 2, WR: 2, TE: 1 ,FLEX: 1};
+const limits = { QB: 1, RB: 2, WR: 2, TE: 1, FLEX: 1, K: 1 };
 const flexEligible= ["RB", "WR", "TE"];
 function renderRoster() {
   document.querySelectorAll(".roster").forEach(function (list) {
     list.innerHTML = "";
   });
-const counts = { QB: 0, RB: 0, WR: 0, TE: 0, FLEX: 0 };
+const counts = { QB: 0, RB: 0, WR: 0, TE: 0, FLEX: 0, K: 0 };
   let total = 0;
   players.forEach(function (player) {
     const newPlayer = document.createElement("li");
